@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Chuyển sang độ F</h2>
+Nhập độ C
+<input id="nhap1">
+<button id="an" onclick="anvao()">chuyển sang độ F</button>
+<h2 id="res">Kế quả</h2>
+</body>
+</html>
+<script>
+    function anvao() {
+        let a = document.getElementById('nhap1').value
+        let p = a * 9.5 + 32
+        document.getElementById("res").innerHTML = p
+    }
+</script>

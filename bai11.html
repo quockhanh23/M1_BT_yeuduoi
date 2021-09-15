@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Giải phương trình bậc 1</h2>
+<input id="anvao1">
+<input id="anvao2">
+<button onclick="giaiphuongtrinh()">Giải</button>
+
+</body>
+</html>
+<script>
+    function giaiphuongtrinh() {
+        let a = document.getElementById('anvao1').value;
+        let b = document.getElementById('anvao2').value;
+        if (a == 0 && b == 0) {
+            alert('Phương trình có vô số nghiệm.')
+        }else if (a == 0 && b > 0) {
+            alert('Phương trình vô nghiệm.')
+        }else if (a == 0 && b < 0) {
+            alert('Phương trình vô nghiệm.')
+        }else {
+            let x = -b / a
+            alert('Phương trình có nghiệm duy nhất =' + x )
+        }
+
+    }
+</script>

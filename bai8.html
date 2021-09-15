@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Diện tích hình vuông</h2>
+<input id="nhap">
+<button onclick="tinhdientich()">Tính diện tích</button>
+<h2 id="res">Kết quả</h2>
+</body>
+</html>
+<script>
+    function tinhdientich() {
+        let canhhinhvuong = document.getElementById('nhap').value
+        let s = canhhinhvuong * 4
+        document.getElementById('res').innerHTML = "Diện tích = " + s
+    }
+</script>

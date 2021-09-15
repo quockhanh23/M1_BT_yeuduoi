@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Diện tích hình chữ nhật</h2>
+<input id="nhap1">
+<input id="nhap2">
+<button id="button" onclick="tinh()">Diện <tích></tích></button>
+<h2 id="rs">Result</h2>
+</body>
+</html>
+<script>
+    function tinh() {
+        let a = document.getElementById('nhap1').value
+        let b = document.getElementById('nhap2').value
+        let s = a * b
+        document.getElementById('rs').innerHTML = s
+
+    }
+</script>

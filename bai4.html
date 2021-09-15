@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Nhập 3 số nguyên tìm giá trị lớn nhất</h1>
+<h2>Nhập số thứ 1</h2>
+<label><input id="nhapvao1"></label>
+<h2>Nhập số thứ 2</h2>
+<label><input id="nhapvao2"></label>
+<h2>Nhập số thứ 3</h2>
+<label><input id="nhapvao3"></label>
+<button id="r" onclick="anvao()">Result</button>
+</body>
+</html>
+<script>
+    function anvao() {
+        let a = +document.getElementById('nhapvao1').value;
+        let b = +document.getElementById('nhapvao2').value;
+        let c = +document.getElementById('nhapvao3').value;
+        if (a == b && a == c) {
+            alert("3 số bằng nhau")
+        }
+        if (a >= b + c) {
+            alert("a lớn nhất")
+        } else {
+            alert("a nhỏ hơn")
+        }
+        if (b >= a + c) {
+            alert("b lớn nhất")
+        } else {
+            alert("b nhỏ hơn")
+
+        }
+        if (c >= b + a) {
+            alert("c lớn nhất")
+        } else {
+            alert("c nhỏ hơn")
+        }
+
+
+    }
+</script>
+

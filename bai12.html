@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Giải phương trình bậc 2</h2>
+<input id="anvao1">
+<input id="anvao2">
+<input id="anvao3">
+<button onclick="giaiphuongtrinh2()">Giải</button>
+<h2 id="res"></h2>
+</body>
+</html>
+<script>
+    function giaiphuongtrinh2() {
+        let a = document.getElementById('anvao1').value;
+        let b = document.getElementById('anvao2').value;
+        let c = document.getElementById('anvao3').value;
+        let delta = (b ** 2) - 4 * a * c
+        if (delta > 0) {
+            document.getElementById('res').innerHTML = "delta = " + delta + '=>phương trình vô nghiệm'
+        } else if (delta = 0) {
+            document.getElementById('res').innerHTML = "delta = " + delta + "=>phương trình có nghiệm kép"
+        } else {
+            document.getElementById('res').innerHTML = "delta = " + delta + "=>phương trình có 2 nghiệm phân biệt"
+        }
+
+    }
+</script>

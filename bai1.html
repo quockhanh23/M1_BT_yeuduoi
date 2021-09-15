@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Nhập vào 2 số xem a chia hết cho b</h2>
+<input type="text" id="nhapVao1">
+<input type="text" id="nhapVao2">
+<button onclick="anvao()">Ấn vào xem chia hết không</button>
+</body>
+</html>
+<script>
+    function anvao() {
+        let a = document.getElementById("nhapVao1").value;
+        let b = document.getElementById("nhapVao2").value;
+            if (a% b ==0) {
+                alert('a chia hết cho b')
+            } else
+                alert("a không chia hết cho b")
+    }
+
+</script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Đủ tuổi vào lớp 10</h2>
+<input type="text" id="nhap">
+<button id="click" onclick="anvao1()">Nhập tuổi</button>
+<h2 id="res">kết quả</h2>
+</body>
+</html>
+<script>
+   function anvao1() {
+       let tuoi = document.getElementById('nhap').value
+       if (tuoi == 15) {
+           document.getElementById('res').innerHTML = tuoi + " đủ tuổi ok";
+       } else if (tuoi < 15) {
+           document.getElementById('res').innerHTML = tuoi + " không đủ tuổi vào lớp 10";
+       } else {
+           document.getElementById('res').innerHTML = tuoi + " quá tuổi vào lớp 10";
+       }
+   }
+</script>
