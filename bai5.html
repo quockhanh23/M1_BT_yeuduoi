@@ -22,7 +22,10 @@
         let b = +document.getElementById('nhap2').value;
         let c = +document.getElementById('nhap3').value;
         let tb = (a + b + c) / 3;
-        if (tb >= 8.5) {
+        if (tb >10) {
+            document.getElementById('hien').innerText = tb + 'nhập lại điểm'
+        }
+        if (tb >= 8.5 && tb <= 10) {
             document.getElementById('hien').innerText = tb + " học lực xuất sắc"
         }
         if (tb < 8.5) {
@@ -33,6 +36,9 @@
         }
         if (tb < 6) {
             document.getElementById('hien').innerText = tb + " học lực yếu"
+        }
+        if (tb < 0) {
+            document.getElementById('hien').innerText = 'nhập lại điểm'
         }
     }
 </script>
