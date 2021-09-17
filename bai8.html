@@ -14,7 +14,11 @@
 <script>
     function tinhdientich() {
         let canhhinhvuong = document.getElementById('nhap').value
-        let s = canhhinhvuong * 4
-        document.getElementById('res').innerHTML = "Diện tích = " + s
+        if (canhhinhvuong > 0) {
+            let s = canhhinhvuong * 4
+            document.getElementById('res').innerHTML = "Diện tích = " + s
+        } else {
+            document.getElementById('res').innerHTML = "sai"
+        }
     }
 </script>
